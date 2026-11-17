@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#280811">
+  <meta name="description" content="A royal engagement celebration invitation.">
+  <title>Royal Engagement Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true" id="particles"></div>
+  <main class="invitation" aria-live="polite">
+    <div class="curtain curtain-left" aria-hidden="true"></div>
+    <div class="curtain curtain-right" aria-hidden="true"></div>
+
+    <section class="screen active" id="page1" aria-label="Opening invitation">
+      <div class="ornate-frame">
+        <div class="top-ornament">✧ ❧ ✧</div>
+        <p class="eyebrow reveal">A ROYAL ANNOUNCEMENT</p>
+        <div class="envelope-wrap" aria-hidden="true">
+          <div class="envelope">
+            <div class="envelope-back"></div>
+            <div class="envelope-letter"><span>With love</span><b>✦</b></div>
+            <div class="envelope-flap"></div>
+            <div class="envelope-front"></div>
+            <div class="wax-seal">R</div>
+          </div>
+        </div>
+        <h1 class="opening-title reveal">YOU ARE<br><em>CORDIALLY INVITED</em></h1>
+        <p class="subheading reveal">TO THE ROYAL ENGAGEMENT CELEBRATION</p>
+        <div class="gold-rule"><span>❖</span></div>
+        <button class="gold-button" data-go="2">OPEN INVITATION <span>→</span></button>
+        <div class="bottom-ornament">❧ ✧ ❧</div>
+      </div>
+      <span class="page-count">1 <i>of</i> 3</span>
+    </section>
+
+    <section class="screen" id="page2" aria-label="Bride and groom">
+      <div class="ornate-frame couple-frame">
+        <p class="eyebrow">THE BEGINNING OF FOREVER</p>
+        <div class="floral-corner floral-one">❦</div>
+        <div class="floral-corner floral-two">❦</div>
+        <p class="role">GROOM</p>
+        <h2 class="couple-name groom-name">RAMKRISHNA<br>MUSTEDAR</h2>
+        <div class="and-divider"><span>✦</span> AND <span>✦</span></div>
+        <p class="role">BRIDE</p>
+        <h2 class="couple-name bride-name">SUSHMA<br>GUTTEDAR</h2>
+        <p class="journey">Two Hearts, One Beautiful Journey</p>
+        <div class="gold-rule"><span>❖</span></div>
+        <div class="button-row">
+          <button class="outline-button" data-go="1">← PREVIOUS</button>
+          <button class="gold-button" data-go="3">CONTINUE TO CELEBRATION →</button>
+        </div>
+      </div>
+      <span class="page-count">2 <i>of</i> 3</span>
+    </section>
+
+    <section class="screen" id="page3" aria-label="Engagement details">
+      <div class="ornate-frame details-frame">
+        <p class="eyebrow">TOGETHER WITH OUR FAMILIES</p>
+        <h2 class="details-title">THE ROYAL<br><em>CELEBRATION</em></h2>
+        <div class="couple-line">SUSHMA GUTTEDAR <span>✦</span> RAMKRISHNA MUSTEDAR</div>
+
+        <div class="event-grid">
+          <div class="event-item"><span class="detail-icon">✧</span><small>EVENT DATE</small><strong id="eventDate">Add your engagement date</strong></div>
+          <div class="event-item"><span class="detail-icon">◷</span><small>EVENT TIME</small><strong id="eventTime">Add your engagement time</strong></div>
+          <div class="event-item venue-item"><span class="detail-icon">⌖</span><small>VENUE</small><strong id="venueName">Add venue name</strong><p id="venueAddress">Add full venue address</p></div>
+        </div>
+
+        <div class="countdown-heading">THE CELEBRATION BEGINS IN</div>
+        <div class="countdown" id="countdown">
+          <div class="time-box"><strong id="days">00</strong><span>DAYS</span></div>
+          <div class="time-box"><strong id="hours">00</strong><span>HOURS</span></div>
+          <div class="time-box"><strong id="minutes">00</strong><span>MINUTES</span></div>
+          <div class="time-box"><strong id="seconds">00</strong><span>SECONDS</span></div>
+        </div>
+        <p class="celebration-started" id="startedMessage" hidden>THE ROYAL CELEBRATION HAS BEGUN!</p>
+
+        <div class="map-buttons">
+          <a class="gold-button map-button" id="mapLink" href="#" target="_blank" rel="noopener">VIEW LOCATION ON GOOGLE MAPS ↗</a>
+          <a class="outline-button map-button" id="directionsLink" href="#" target="_blank" rel="noopener">GET DIRECTIONS ↗</a>
+        </div>
+        <p class="invitation-message">Your gracious presence and blessings will make our celebration even more special.<br>We warmly invite you to join us and bless the beautiful beginning of our journey together.</p>
+        <p class="regards">WITH LOVE AND WARM REGARDS</p>
+        <p class="family">FAMILY AND FRIENDS</p>
+        <div class="button-row final-buttons">
+          <button class="outline-button" data-go="2">← PREVIOUS</button>
+          <button class="gold-button" id="replayButton">↻ REPLAY INVITATION</button>
+        </div>
+      </div>
+      <span class="page-count">3 <i>of</i> 3</span>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
